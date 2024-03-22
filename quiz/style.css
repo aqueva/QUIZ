@@ -1,0 +1,48 @@
+*{
+    padding: 1px;
+}
+body{
+    background-color: whitesmoke;
+}
+h1{
+    color: orangered;
+}
+hr{
+    height: 7px;
+    background-color: black;
+    border-radius: 19px;
+    width: 50%;
+}
+h2{
+    color: orangered;
+}
+.container{
+    width: 60%;
+height: 400px;
+box-shadow: 1px 1px 8px black;
+border-radius: 12px;
+}
+.score{
+    float: right;
+    background-color: orangered;
+    width: 20%;
+    height: 40px;
+    border-radius: 1px 12px 1px 20px;
+    padding-bottom: 50px;
+}
+.question{
+    width: 90%;
+    height: 200px;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+    
+}
+.btn1{
+ height: 30px;
+ border-radius: 14px;
+ color: black;
+ border-color: orangered;
+ font-size: 20px;
+}

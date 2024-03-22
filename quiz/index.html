@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<center>
+    <h1><b>QUIZ</b></h1>
+    <hr>
+    <div class="container">
+        <div class="score">
+            <h3>Score</h3>
+            <h2 style="color: white;" id="score"></h2>
+        </div>
+        <h2>
+            The Quiz is about html and css
+        </h2>
+        <hr><br>
+        <div class="question">
+            <p id="int" style="display: block;">If you are ready click start so as to start your quiz.<br>
+                Good luck!!!<br><br>
+                <button class="btn1" onclick="start()">Start quiz</button>
+            </p>
+            <p id="q1" style="display: none;">1)CSS stands for?<br>
+        <input type="radio" name="q1" id="">Cost System Security<br>
+        <input type="radio" name="q1" onclick="true1()">Cascanding Style Sheet<br>
+        <input type="radio" name="q1" id="">Create Style Sheet<br>
+        <input type="radio" name="q1" id="">Code System Style
+           </p>
+           <p id="q2" style="display: none;">
+2)HTML stands for?<br>
+<input type="radio" name="q2" onclick="true2()">Hypertext Morkup Language<br>
+<input type="radio" name="q2" id="">Hyperlink Text Moving lobot<br>
+<input type="radio" name="q2" id="">Holizontal Text Movement Linear<br>
+<input type="radio" name="q2" id="">Hypertext Main Language
+           </p>
+           <p id="q3" style="display: none;">
+3)CSS used to?<br>
+<input type="radio" name="q3" id="">To create sheets.<br>
+<input type="radio" name="q3" id="">to remove sheets.<br>
+<input type="radio" name="q3" id="">to rename sheets.<br>
+<input type="radio" name="q3" id="">to maintain the security of web pages.<br>
+<input type="radio" name="q3" onclick="true3()">To decorate layout of web pages.
+           </p>
+           <p id="q4" style="display: none;">
+4)HTML is used to?<br>
+<input type="radio" name="q4" id="">To create the content in web pages<br>
+<input type="radio" name="q4" id="">to enter text in web pages<br>
+<input type="radio" name="q4" onclick="true4()">To manipulate content in web pages 
+           </p>
+           <p id="q5" style="display: none;">
+5)Among the following what are types of CSS?<br>
+<input type="radio" name="q5" id="">Out word,in word and no word CSS<br>
+<input type="radio" name="q5" id="">Strong,Medium and Easy css<br>
+<input type="radio" name="q5" id="">American,Asian,African,European and Australian CSS<br>
+<input type="radio" name="q5" id="">UP an Down CSS<br>
+<input type="radio" name="q5" onclick="true5()">inline,internal and external CSS
+           </p>
+        </div>
+        <button class="btn1" onclick="next2()" id="next2" style="display: none;">Next question</button>
+        <button class="btn1" onclick="next3()" id="next3" style="display: none;">Next question</button>
+        <button class="btn1" onclick="next4()" id="next4" style="display: none;">Next question</button>
+        <button class="btn1" onclick="next5()" id="next5" style="display: none;">Next question</button>
+        <button class="btn1" onclick="feedback()" id="feedback" style="display: none;">Feed back</button>
+    </div>
+    
+    <script>
+function start(){
+    document.getElementById("int").style.display="none";
+    document.getElementById("q1").style.display="block";
+    document.getElementById("next2").style.display="block";
+   
+}
+function next2(){
+    document.getElementById("q2").style.display="block";
+    document.getElementById("q1").style.display="none";
+    document.getElementById("next3").style.display="block";
+    document.getElementById("next2").style.display="none";
+    var a=document.getElementById("true1").value;
+}
+
+function next3(){
+    document.getElementById("q3").style.display="block";
+    document.getElementById("q2").style.display="none";
+    document.getElementById("next4").style.display="block";
+    document.getElementById("next3").style.display="none";
+}
+function next4(){
+    document.getElementById("q4").style.display="block";
+    document.getElementById("q3").style.display="none";
+    document.getElementById("next5").style.display="block";
+    document.getElementById("next4").style.display="none";
+}
+function next5(){
+    document.getElementById("q5").style.display="block";
+    document.getElementById("q4").style.display="none";
+    document.getElementById("feedback").style.display="block";
+    document.getElementById("next5").style.display="none";
+}
+function true1(){
+   var a=20;
+   document.getElementById("score").innerHTML=a;
+}
+function true2(){
+   var b=20;
+var bb=20+b;
+   document.getElementById("score").innerHTML=bb;
+}
+function true3(){
+   var c=20;
+   var cc
+   document.getElementById("score").innerHTML=c;
+}
+function true4(){
+   var d=20;
+   document.getElementById("score").innerHTML=d;
+}
+function true5(){
+   var e=20;
+   document.getElementById("score").innerHTML=e;
+}
+    </script>
+</center>
+</body>
+</html>
